@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+
+int main(){
+    int arr[];
+    int i,n,key;
+    printf("give the size of the array: ");
+    scanf("%d",&n)
+    printf("Enter the array please");
+    for(i=0;i<=n;i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("give the elemnt you want to find");
+    scanf("%d",&key);
+    return search(d,arr);
+}
+
+int search(int key, int arr){
+    n = sizeof(arr);
+    int i=0;
+    while(i<=n && arr[i] != key){
+        i++;
+    }
+    if(arr[i] != key){
+        return i;
+    }else{
+        return -1;
+    }
+}
+

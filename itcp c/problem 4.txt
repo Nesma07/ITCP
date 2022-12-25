@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+
+int main(){
+    print
+}
+int merge(*int arr1[], *int arr2[]){
+    int i , j, temp;
+    int n1= sizeof(arr1);
+    int n2= sizeof(arr2);
+    i=0; j=0;
+
+    while (i<n1){
+    if(arr1[i]>arr2[j]){
+        temp = arr2[j];
+        arr2[j] = arr1[i];
+        arr1[i] = temp;
+        i++;
+        }else{
+            i++;
+        }
+    
+    }   
+}

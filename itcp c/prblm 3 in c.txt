@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+
+struct LinkedList{
+    int node;
+    struct LinkedList *next;
+};
+
+typedef struct list *node;
+
+node creatnode(){
+        node temp;
+    temp = (node)molloc(sizeof(struct list)){
+        temp-> next = NULL;
+    return temp
+    };
+}
+
+node addNode(node head, int value){
+    node temp,p;
+    temp = createNode();
+    temp->data = value;
+    if(head == NULL){
+        head = temp;
+    }else{
+        p  = head; 
+        while(p->next != NULL){
+            p = p->next;
+        }
+        p->next = temp;
+    }
+    return head;
+}
+
+int dublicated(*list){
+    node p;
+    p = head;
+    temp = p->next;
+    while(p != NULL){
+        if(p = temp){
+            temp = temp->next;
+        }
+    }
+    return list
+}
